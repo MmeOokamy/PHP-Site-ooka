@@ -1,0 +1,55 @@
+/******************************************************
+*style css: version 1.0
+*Controller: MainController
+*
+********************************************************/
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+body
+{
+    background-image: url("../img/background_liara.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+nav,
+footer
+{
+    display: none;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 100vh;
+    }
+}
+
+.firstName
+{
+    color: aliceblue;
+}
+.secondName
+{
+    color: darkcyan;
+}
+
+h2 {
+    letter-spacing: 3px;
+}
+
+#body
+{
+    align-content: center;
+    vertical-align: center;
+}
