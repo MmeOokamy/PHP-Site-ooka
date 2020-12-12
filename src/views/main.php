@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Identité Numérique d'un développeuse web et web mobile en devenir">
     <title>Une Passion, Un métier!</title>
-
+    <link rel="stylesheet" href="./src/public/css/main.style.css">
     <?php include "./src/views/template/script.php"; ?>
 </head>
 
