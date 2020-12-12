@@ -1,12 +1,14 @@
 <?php
 
 require 'src/controllers/MainController.php';
+require 'src/controllers/AboutController.php';
 require 'src/data/DatabaseHandler.php';
 
-$youAreHere = filter_input(INPUT_GET, "youAreHere");
+$youAreHere = filter_input(INPUT_GET, "yah");
 
 $routeMapping = [
     'main' => MainController::class,
+    'about' => AboutController::class
 
 ];
 
@@ -20,7 +22,7 @@ foreach ($routeMapping as $routeValue => $className) {
     }
 }
 
-if(empty($controller)){
+if(!isset($controller)){
     $controller = new MainController();
     $controller->routeMappingManage();
 }

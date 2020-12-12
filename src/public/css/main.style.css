@@ -35,11 +35,8 @@ footer
     }
 }
 
-.firstName
-{
-    color: aliceblue;
-}
-.secondName
+
+.txt
 {
     color: darkcyan;
 }
@@ -50,6 +47,9 @@ h2 {
 
 #body
 {
+    color: azure;
     align-content: center;
     vertical-align: center;
 }
+
+
