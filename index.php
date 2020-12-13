@@ -4,7 +4,8 @@ require 'src/controllers/MainController.php';
 require 'src/controllers/AboutController.php';
 require 'src/data/DatabaseHandler.php';
 
-$youAreHere = filter_input(INPUT_GET, "yah");
+
+$youAreHere = filter_input(INPUT_GET, "view");
 
 $routeMapping = [
     'main' => MainController::class,
@@ -22,7 +23,7 @@ foreach ($routeMapping as $routeValue => $className) {
     }
 }
 
-if(!isset($controller)){
+if (!isset($controller)) {
     $controller = new MainController();
     $controller->routeMappingManage();
 }
