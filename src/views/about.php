@@ -90,15 +90,14 @@
                         <h3 class="font-weight-bold dark-grey-text mb-3">LA OÙ TOUT A COMMENCÉ...</h3>
                         <p class="grey-text font-small"><time datetime="2005">2005, mes débuts dans le Développement
                                 Web!</time></p>
-                        <p class="dark-grey-text text-muted">L'ADSL commencé à apparaître dans les foyers, l'arrivée
-                            de Windows XP.
-                            Mon premier site est né avec FrontPage!
-                            Peu de temps après Notepad m'a envoûté et le SiteDuZero m'a aidé...</p>
+                        <p class="dark-grey-text text-muted">L'ADSL commençait a être normalisé dans les foyers, l'arrivée de Windows XP. Mon premier site est né avec FrontPage! Peu de temps après Notepad m'a envoûté et le SiteDuZero m'a aidé...</p>
                     </li>
                 </ol>
 
             </div>
         </div>
+        <div class="lead text-center text-muted pt-2 mb-5"><a href="./src/public/doc/Emmanuelle_Gougelet_CV.pdf" type="button" class="btn btn-deep-orange"> Mon Curriculum Vitae</a></div>
+
     </section>
 
     <hr class="my-5">
@@ -106,9 +105,7 @@
     <section class="team-section text-center dark-grey-text">
         <h2 class="font-weight-bold mb-4 pb-2">Vers L'Inconnu</h2>
         <hr class="w-header my-4">
-        <p class="lead text-center text-muted pt-2 mb-5">
-            Je vais juste prendre un moment pour vous parler de mon avenir et de mes projets.
-        </p>
+        <p class="lead text-center text-muted pt-2 mb-5">  </p>
 
         <div class="row">
 
@@ -117,7 +114,7 @@
                 <i class="fab fa-symfony fa-3x red-text"></i>
                 <h5 class="font-weight-bold my-4">Passion</h5>
                 <p class="dark-grey-text mb-md-0">Il n'y a pas d'âge pour la vivre! <br>
-                    on a tous des projets géniaux et excitants. l'essentiel c'est de les réaliser!
+                    On a tous des projets géniaux et excitants. l'essentiel c'est de les réaliser!
                 </p>
 
             </div>
@@ -126,14 +123,12 @@
 
                 <i class="fas fa-terminal fa-3x cyan-text"></i>
                 <h5 class="font-weight-bold my-4">Espoir</h5>
-                <p class="dark-grey-text mb-md-0">Après cette formation intensive de 4 semaines sur  xcode et swift. Avec mon groupe, nous désirons poursuivre le développement de notre application.
-                </p>
+                <p class="dark-grey-text mb-md-0">L'avantage avec les petites formations c'est qu'elles permettent de confirmer ou non notre orientation professionnelle future. C'était d'ailleurs l'objectif premier de cette formation intensive de 4 semaines sur  xcode et swift: confirmer mon envie d'aller plus loin dans l'apprentissage du développement.</p>
             </div>
             <div class="col-md-4 mb-4">
                 <i class="fab fa-php fa-3x orange-text"></i>
                 <h5 class="font-weight-bold my-4">Réalité</h5>
-                <p class="dark-grey-text mb-0">C'est avec une grande joie que j'intègre le cursus de dev web et web mobile! cette session début en septembre pour finir en fin juin. Par la suite ou en même temps, étudier kotlin et swift plus en détail.
-                </p>
+                <p class="dark-grey-text mb-0">C'est avec une grande joie que j'intègre le cursus de développeur web et web mobile! La formation a débuté en septembre pour finir en fin juin.  Nous avons déjà exploré le PHP, Symfony, JavaScript, Wordpress.</p>
             </div>
         </div>
     </section>
