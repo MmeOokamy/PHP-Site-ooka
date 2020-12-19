@@ -24,4 +24,16 @@ class Model
             die();
         }
     }
+
+    public function addDevList($name)
+    {
+        try {
+            $request = $this->handle->prepare('INSERT INTO `todolist`(`todo_name`) VALUES (?)');
+            $request->execute([$name]);
+            return true;
+        } catch (PDOException $e) {
+            var_dump('erreur lors de la requête sql :' . $e->getMessage());
+            return false;
+        }
+    }
 }

@@ -23,5 +23,7 @@
 
             </ul>
         </div>
-        <div><img src="./src/public/img/mr_cookie.gif" height="50px" width="50px" alt=""></div>
+        <div>
+            <img src="./src/public/img/mr_cookie.gif" height="50px" width="50px" alt="Cookie qui danse, oeuvre de Yurelei">
+        </div>
     </nav>

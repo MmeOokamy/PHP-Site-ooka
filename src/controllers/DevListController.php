@@ -1,7 +1,7 @@
 <?php
 
 
-class TodoListController
+class DevListController
 {
 
     private $title;

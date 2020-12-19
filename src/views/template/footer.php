@@ -1,5 +1,5 @@
-</div>
 
+</div>
 <footer class="footer">
     <div class="content has-text-centered">
         <div>
@@ -19,12 +19,13 @@
         <hr class="my-5 ">
         <div>
             <h4 class="title is-5">Ookamy ©Copyright <?php echo date("Y") ?> </h4>
+            <h4 class="title is-5"><a href="https://www.deviantart.com/yurelei" title="DeviantArt de Yurelei">Illustrations by Yurelei <i class="fab fa-deviantart"></i> </a> </h4>
         </div>
     </div>
 
 </footer>
 
-</div>
+
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
