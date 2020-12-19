@@ -2,6 +2,8 @@
 
 require 'src/controllers/MainController.php';
 require 'src/controllers/AboutController.php';
+require 'src/controllers/TodoListController.php';
+require 'src/models/Model.php';
 require 'src/data/DatabaseHandler.php';
 
 
@@ -9,7 +11,8 @@ $youAreHere = filter_input(INPUT_GET, "view");
 
 $routeMapping = [
     'main' => MainController::class,
-    'about' => AboutController::class
+    'about' => AboutController::class,
+    'checklist' => TodoListController::class
 
 ];
 

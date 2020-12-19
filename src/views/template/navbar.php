@@ -17,6 +17,9 @@
                 <li class=" nav-item">
                     <a class="nav-link waves-effect waves-light" target="_blank" href="https://mme.ooka.planethoster.world/" title="Attention c'est moche"><i class="fab fa-wordpress-simple"></i> WordTeste</a>
                 </li>
+                <li class=" nav-item">
+                    <a class="nav-link waves-effect waves-light" target="" href="?view=checklist" title="Ce que je dois faire!"><i class="fas fa-clipboard-list"></i>Liste de Tâches</a>
+                </li>
 
             </ul>
         </div>
