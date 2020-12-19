@@ -21,6 +21,10 @@
             <h4 class="title is-5">Ookamy ©Copyright <?php echo date("Y") ?> </h4>
             <h4 class="title is-5"><a href="https://www.deviantart.com/yurelei" title="DeviantArt de Yurelei">Illustrations by Yurelei <i class="fab fa-deviantart"></i> </a> </h4>
         </div>
+        <hr class="my-5 ">
+        <div>
+            <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-php"></i> <i class="fab fa-bootstrap"></i> <i class="fab fa-mdb"></i> <i class="fab fa-symfony"></i> <i class="fab fa-github"></i>
+        </div>
     </div>
 
 </footer>
