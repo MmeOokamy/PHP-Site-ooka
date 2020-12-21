@@ -31,6 +31,6 @@ class AddDevListController
             C\'est mort !</div>';
             }
     }
-        include(__DIR__ . "./../views/addList.php");
+        include(__DIR__ . "./../Views/addList.php");
     }
 }

@@ -22,7 +22,7 @@ class DevListController
     function routeMappingManage()
     {
         $this->list = $this->model->devList();
-        include(__DIR__ . "./../views/list.php");
+        include(__DIR__ . "./../Views/list.php");
     }
 
 

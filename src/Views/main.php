@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?= $this->title; ?></title>
     <link rel="stylesheet" href="./src/public/css/main.style.css">
-    <?php include "./src/views/template/script.php"; ?>
+    <?php include "./src/Views/template/script.php"; ?>
 </head>
 
 <body>

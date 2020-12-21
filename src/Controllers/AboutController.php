@@ -17,6 +17,6 @@ class AboutController
 
     function routeMappingManage()
     {
-        include(__DIR__ . "./../views/about.php");
+        include(__DIR__ . "./../Views/about.php");
     }
 }

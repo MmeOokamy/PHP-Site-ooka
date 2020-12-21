@@ -1,4 +1,4 @@
-<?php include './src/views/template/header.php';?>
+<?php include './src/Views/template/header.php';?>
 
     <section class="erebe team-section text-center dark-grey-text">
 
@@ -144,4 +144,4 @@
     </section>
 
 
-<?php include './src/views/template/footer.php';?>
+<?php include './src/Views/template/footer.php';?>

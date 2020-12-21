@@ -17,6 +17,6 @@ class MainController
 
     function routeMappingManage()
     {
-        include(__DIR__ . "./../views/main.php");
+        include(__DIR__ . "./../Views/main.php");
     }
 }

@@ -1,11 +1,11 @@
 <?php
 
-require 'src/controllers/MainController.php';
-require 'src/controllers/AboutController.php';
-require 'src/controllers/DevListController.php';
-require 'src/controllers/AddDevListController.php';
-require 'src/models/Model.php';
-require 'src/data/DatabaseHandler.php';
+require 'src/Controllers/MainController.php';
+require 'src/Controllers/AboutController.php';
+require 'src/Controllers/DevListController.php';
+require 'src/Controllers/AddDevListController.php';
+require 'src/Models/Model.php';
+require 'src/Data/DatabaseHandler.php';
 
 
 $youAreHere = filter_input(INPUT_GET, "view");

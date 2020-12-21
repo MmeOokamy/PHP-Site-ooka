@@ -1,4 +1,4 @@
-<?php include './src/views/template/header.php'; ?>
+<?php include './src/Views/template/header.php'; ?>
 
     <section class="erebe team-section text-center dark-grey-text">
         <h1 class=""><i class="fas fa-list"></i> Ma ToDo List <i class="fas fa-code"></i> </h1>
@@ -12,4 +12,4 @@
 
     </ul>
     </section>
-<?php include './src/views/template/footer.php';?>
+<?php include './src/Views/template/footer.php';?>
