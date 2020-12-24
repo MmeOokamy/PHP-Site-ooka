@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use App\Data\DatabaseHandler;
+use App\Models\Model;
+
 class DevListController
 {
 
