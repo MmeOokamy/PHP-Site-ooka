@@ -1,6 +1,8 @@
 <?php
  namespace App\Data;
 
+use PDO;
+
 class DatabaseHandler
 {
     private static $instance = null;
@@ -24,14 +26,15 @@ class DatabaseHandler
         }
     }
 
-    public static function getInstance(){
+    public static function getInstance(): ?DatabaseHandler
+    {
         if (is_null(self::$instance)){
             self::$instance = new self();
         }
         return self::$instance;
     }
 
-    public function getHandle()
+    public function getHandle(): PDO
     {
         return $this->handle;
     }
