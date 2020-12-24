@@ -7,7 +7,7 @@ Avec un mix de bootstrap MDB et Bulma
 
 Ah et la page d'accueil est juste un cri de fangirl
 
-##gitignore
+## gitignore
 Utilisation enfin de .gitignore ! 
 
 

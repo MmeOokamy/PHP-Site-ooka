@@ -1,12 +1,9 @@
 <?php
 
-require 'src/Controllers/MainController.php';
-require 'src/Controllers/AboutController.php';
-require 'src/Controllers/DevListController.php';
-require 'src/Controllers/AddDevListController.php';
-require 'src/Models/Model.php';
-require 'src/Data/DatabaseHandler.php';
+use App\Controllers\AboutController;
+use App\Controllers\MainController;
 
+require_once __DIR__ . '/vendor/autoload.php';
 
 $youAreHere = filter_input(INPUT_GET, "view");
 

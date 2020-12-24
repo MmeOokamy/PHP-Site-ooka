@@ -1,0 +1,16 @@
+{
+    "name": "nyx/site-php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "MmeOokamy",
+            "email": "manue.ggt@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
