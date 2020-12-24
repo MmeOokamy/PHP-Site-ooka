@@ -12,13 +12,8 @@ $youAreHere = filter_input(INPUT_GET, "view");
 $routeMapping = [
     'main' => MainController::class,
     'about' => AboutController::class,
-<<<<<<< Updated upstream
     'checklist' => DevController::class
-=======
-    'checklist' => DevController::class,
-    'addList' => AddDevListController::class
 
->>>>>>> Stashed changes
 ];
 
 foreach ($routeMapping as $routeValue => $className) {
