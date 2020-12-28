@@ -2,14 +2,16 @@
 
 namespace App\Controllers;
 
+use App\Data\AbstractView;
 use App\Data\DatabaseHandler;
 use App\Models\Model;
+use App\Views\MainView;
 
 class MainController
 {
-    private $title;
-    private $metaName;
-    private $metaContent;
+    private string $title;
+    private string $metaName;
+    private string $metaContent;
 
 
     public function __construct()
@@ -19,8 +21,8 @@ class MainController
         $this->metaContent = "Identité Numérique d'une développeuse web et web mobile en devenir";
     }
 
-    function routeMappingManage()
+    public function home(): AbstractView
     {
-        include(__DIR__ . "./../Views/main.php");
+        return new MainView();
     }
 }
