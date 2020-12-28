@@ -11,9 +11,14 @@ final class DatabaseHandler
     private static $instance;
 
 
-    private function __construct()
-    {
+    private function __construct(){}
 
+    /**
+     *
+     * @static
+     */
+    private static function getInstance(): \PDO
+    {
         $host = "localhost";
         //$user = "ookadnzb_ooka";
         //$mdp = "jesuisunechaussette";
@@ -21,25 +26,13 @@ final class DatabaseHandler
         $user = "root";
         $mdp = "";
         $databaseName = "ooka_land";
-        try {
-            $this->handle = new \PDO(
-                "mysql:host=$host;dbname=$databaseName;charset=utf8",
-                $user, $mdp,
-                [\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION]
-            );
-        } catch ( \PDOException $e){
-            die('Échec de la connexion avec la base de donnée : ' . $e->getMessage());
-        }
-    }
 
-    /**
-     * @return \PDO
-     * @static
-     */
-    private static function getInstance(): \PDO
-    {
         if (is_null(DatabaseHandler::$instance)){
-            self::$instance = new self();
+           $dbh = new \PDO(
+               "mysql:host=$host;dbname=$databaseName;charset=utf8",
+               $user, $mdp,
+               [\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION]);
+           DatabaseHandler::$instance = $dbh;
         }
         return self::$instance;
     }

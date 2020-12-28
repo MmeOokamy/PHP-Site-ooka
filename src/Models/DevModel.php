@@ -5,6 +5,7 @@ namespace App\Models;
 
 
 use App\Data\AbstractModel;
+use App\Data\DatabaseHandler;
 
 final class DevModel extends AbstractModel
 {
@@ -42,7 +43,7 @@ final class DevModel extends AbstractModel
     }
 
 
-    static public function findAll(): array
+    public static function findAll(): array
     {
         return parent::findAllInTable('dev_step');
     }

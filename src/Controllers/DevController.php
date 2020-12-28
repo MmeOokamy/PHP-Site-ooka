@@ -9,13 +9,20 @@ use App\Views\StandardView;
 
 class DevController
 {
+    /**
+     * Pour chaque vue rajouter 2 variables 'title' et 'metaContente' //
+     */
 
-    public function allDev(): StandardView
+    /**
+     * @return StandardView
+     */
+    public function allDev()
     {
         return new StandardView([
             'list'
         ],[
-            'title'=>'Coucou'
+            'devs' => DevModel::findAll(),
+            'title' =>'Coucou'
         ]);
 
     }
