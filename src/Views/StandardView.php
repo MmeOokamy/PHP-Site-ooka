@@ -6,19 +6,45 @@ use App\Data\AbstractView;
 
 class StandardView extends AbstractView
 {
+    protected array $templates;
+    protected array $variables;
+
+    /**
+     * AbstractView constructor.
+     * @param array $templates
+     * @param array $variables
+     */
+    public function __construct(array $templates, array $variables = [])
+    {
+        $this->templates = $templates;
+        $this->variables = $variables;
+    }
 
     protected function renderHead(): void
     {
-        // TODO: Implement renderHead() method.
+        include './src/pages/template/header.php';
     }
+
+
 
     protected function renderBody(): void
     {
-        // TODO: Implement renderBody() method.
+        /// Pour chaque couple de nom de variable/valeur
+        foreach ($this->variables as $varName => $value) {
+            // Crée une variable qui a pour nom le contenu de $varName
+            // et lui assigne la valeur correspondante
+            $$varName = $value;
+        }
+        // Inclue les templates fournis lors de la création de l'objet
+        foreach ($this->templates as $template) {
+            include './src/pages/' . $template . '.php';
+        }
     }
 
     protected function renderFooter(): void
     {
-        // TODO: Implement renderFooter() method.
+        include './src/pages/template/footer.php';
     }
+
+
 }

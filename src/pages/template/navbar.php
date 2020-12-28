@@ -1,5 +1,6 @@
-    <nav class="mb-1 navbar navbar-expand-lg navbar-light peach-gradient">
-        <a class="navbar-brand massEffect" href="/">Ookamy</a>
+<header>
+      <nav class="mb-1 navbar navbar-expand-lg navbar-light peach-gradient">
+        <a class="navbar-brand massEffect" href="about">Ookamy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +19,7 @@
                     <a class="nav-link waves-effect waves-light" target="_blank" href="https://mme.ooka.planethoster.world/" title="Attention c'est moche"><i class="fab fa-wordpress-simple"></i> WordTeste</a>
                 </li>
                 <li class=" nav-item">
-                    <a class="nav-link waves-effect waves-light" target="" href="?view=checklist" title="Ce que je dois faire!"><i class="fas fa-clipboard-list"></i>Liste de Tâches</a>
+                    <a class="nav-link waves-effect waves-light" target="" href="todolist" title="Ce que je dois faire!"><i class="fas fa-clipboard-list"></i>Liste de Tâches</a>
                 </li>
 
             </ul>
@@ -27,3 +28,6 @@
             <img src="./src/public/img/mr_cookie.gif" height="50px" width="50px" alt="Cookie qui danse, oeuvre de Yurelei">
         </div>
     </nav>
+
+    </header>
+

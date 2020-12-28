@@ -1,25 +1,17 @@
 <?php
 
 namespace App\Controllers;
+use App\Data\AbstractView;
 use App\Data\DatabaseHandler;
 use App\Models\Model;
+use App\Views\StandardView;
 
 class AboutController
 {
-    private $title;
-    private $metaName;
-    private $metaContent;
 
 
-    public function __construct()
+    public function about(): AbstractView
     {
-        $this->title = "Changer de vie et me reconvertir vers une vieille passion d'adolescente!";
-        $this->metaName = "description";
-        $this->metaContent = "Parcours de Vie";
-    }
-
-    function routeMappingManage()
-    {
-        include(__DIR__ . "./../Views/about.php");
+        return new StandardView(['about',]);
     }
 }

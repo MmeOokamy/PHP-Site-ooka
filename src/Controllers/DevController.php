@@ -5,16 +5,20 @@ namespace App\Controllers;
 
 use App\Data\DatabaseHandler;
 use App\Models\DevModel;
+use App\Views\StandardView;
 
 class DevController
 {
-    private $title;
-    private $metaName;
-    private $metaContent;
-    private $model;
-    private $list;
 
+    public function allDev(): StandardView
+    {
+        return new StandardView([
+            'list'
+        ],[
+            'title'=>'Coucou'
+        ]);
 
+    }
 
 
 }

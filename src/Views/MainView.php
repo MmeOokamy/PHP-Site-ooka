@@ -11,16 +11,18 @@ class MainView extends AbstractView
 
     protected function renderHead(): void
     {
-        // TODO: Implement renderHead() method.
+        include './src/pages/main/head.main.php';
     }
 
     protected function renderBody(): void
     {
-        include './src/pages/main.php';
+        include './src/pages/main/body.main.php';
     }
 
     protected function renderFooter(): void
     {
-        // TODO: Implement renderFooter() method.
+        include './src/pages/main/footer.main.php';
     }
+
+
 }

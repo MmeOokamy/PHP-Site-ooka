@@ -1,16 +1,5 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="<?= $this->metaName; ?>" content="<?= $this->metaContent; ?>">
-    <link rel="shortcut icon" type="image/png" href="./src/public/img/favicon.ico"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?= $this->title; ?></title>
-    <link rel="stylesheet" href="./src/public/css/main.style.css">
-    <?php include "./src/pages/template/script.php"; ?>
-</head>
+
+
 
 <body>
 
@@ -28,7 +17,7 @@
                     <!-- direction -->
                     <div>
 
-                        <a class="btn aqua-gradient waves-effect" href="?view=about">
+                        <a class="btn aqua-gradient waves-effect" href="about">
                             Un petit bout de moi <i class="far fa-laugh"></i>
                         </a>
                     </div>
@@ -36,7 +25,3 @@
             </div>
         </div>
     </div>
-
-
-</body>
-</html>

@@ -6,20 +6,26 @@ namespace App\Data;
 
 abstract class AbstractView
 {
+
     final public function render()
     {
-        echo 'je suis le render' . PHP_EOL;
-        echo 'j\'affiche le header apres' . PHP_EOL;
+        echo '<!doctype html>' . PHP_EOL;
+        echo '<html lang="fr">' . PHP_EOL;
 
             $this->renderHead();
+        echo '<body>' . PHP_EOL;
 
-        echo 'j\'affiche le body apres' . PHP_EOL;
             $this->renderBody();
-        echo 'j\'affiche le footer apres' . PHP_EOL;
+        echo '<!--end of body start of footer-->'. PHP_EOL;
             $this->renderFooter();
+
+        echo '</body>' . PHP_EOL;
+        echo '</html>' . PHP_EOL;
+
     }
 
     abstract protected function renderHead(): void;
+
     abstract protected function renderBody(): void;
     abstract protected function renderFooter(): void;
 }
