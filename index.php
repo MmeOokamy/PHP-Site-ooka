@@ -5,6 +5,7 @@ use App\Controllers\DevController;
 use App\Controllers\ErrorController;
 use App\Controllers\MainController;
 
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 if(isset($_REQUEST['_url'])){
@@ -34,28 +35,29 @@ switch ($routing){
 
 $view->render();
 
+
 /**
 $youAreHere = filter_input(INPUT_GET, "view");
 
 $routeMapping = [
-    'main' => MainController::class,
-    'about' => AboutController::class,
-    'checklist' => DevController::class
+'main' => MainController::class,
+'about' => AboutController::class,
+'checklist' => DevController::class
 
 ];
 
 foreach ($routeMapping as $routeValue => $className) {
 
-    if ($youAreHere === $routeValue) {
+if ($youAreHere === $routeValue) {
 
-        $controller = new $className;
-        $controller->render();
-        break;
-    }
+$controller = new $className;
+$controller->render();
+break;
+}
 }
 
 if (!isset($controller)) {
-    $controller = new MainController();
-    $controller->home();
+$controller = new MainController();
+$controller->home();
 }
-**/
+ **/

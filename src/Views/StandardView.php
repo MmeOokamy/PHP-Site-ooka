@@ -26,7 +26,6 @@ class StandardView extends AbstractView
     }
 
 
-
     protected function renderBody(): void
     {
         /// Pour chaque couple de nom de variable/valeur

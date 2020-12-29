@@ -1,5 +1,5 @@
 <?php
-
+/**
 namespace App\Models;
 
 use App\Data\DatabaseHandler;
@@ -40,3 +40,5 @@ class Model
         }
     }
 }
+ *
+ **/

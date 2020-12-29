@@ -12,6 +12,7 @@ class ErrorController
     {
         echo 'Ya rien chef!';
         var_dump($_REQUEST);
+        var_dump($_SERVER);
         die();
     }
 }

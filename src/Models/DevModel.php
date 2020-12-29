@@ -12,7 +12,7 @@ final class DevModel extends AbstractModel
     /**
      * @var string
      */
-    protected string $dev_description;
+    private string $dev_description;
 
     /**
      * DevModel constructor.

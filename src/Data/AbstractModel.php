@@ -60,8 +60,8 @@ abstract class AbstractModel
 
     /**
      * @param string $tableName
-     * @return array
      * Trouve tout les enregistrements d'une database table
+     * @return array
      */
     protected static function findAllInTable(string $tableName): array
     {

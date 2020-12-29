@@ -3,12 +3,10 @@
     <hr class="w-header my-4 text-center">
     <h1><?= $title; ?></h1>
 
-
     <ul>
         <?php foreach ($devs as $dev): ?>
-            <li>
-                <?= $dev['dev_description'] ?>
-            </li>
-        <?php endforeach; ?>
+        <li> <?= $dev->getDevDescription(); ?></li>
+        <?php endforeach;?>
     </ul>
+
 </section>
