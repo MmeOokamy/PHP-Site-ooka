@@ -1,11 +1,9 @@
-<?php include './src/Views/template/header.php'; ?>
+
     <section class="erebe team-section text-center dark-grey-text">
         <ul>
-            <?php foreach ($this->list as $todo): ?>
-                <li>
-                    <?= $todo['todo_name'] ?>
-                </li>
-            <?php endforeach; ?>
+            <?php foreach ($devs as $dev): ?>
+                <li> <?= $dev->getDevDescription(); ?></li>
+            <?php endforeach;?>
 
         </ul>
     </section>
@@ -28,4 +26,3 @@
 
         </form>
     </section>
-<?php include './src/Views/template/footer.php';?>

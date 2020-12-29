@@ -5,14 +5,16 @@ namespace App\Controllers;
 
 
 use App\Data\AbstractView;
+use App\Views\StandardView;
 
 class ErrorController
 {
     public function pageNotFound(): AbstractView
     {
-        echo 'Ya rien chef!';
-        var_dump($_REQUEST);
-        var_dump($_SERVER);
-        die();
+        return new StandardView([
+            'error404',
+        ]);
+
+
     }
 }

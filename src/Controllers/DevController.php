@@ -18,6 +18,17 @@ class DevController
             'devs' => DevModel::findAll(),
             'title' => 'coucou',
         ]);
+    }
 
+    public function insertDev()
+    {
+        return new StandardView(
+            [
+                'form/insertDev'
+            ], [
+                'devs' => DevModel::findAll(),
+
+            ]
+        );
     }
 }
