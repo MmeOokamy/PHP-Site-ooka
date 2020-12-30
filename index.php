@@ -4,6 +4,7 @@ use App\Controllers\AboutController;
 use App\Controllers\DevController;
 use App\Controllers\ErrorController;
 use App\Controllers\MainController;
+use App\Controllers\MovieLandController;
 
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -27,13 +28,35 @@ switch ($routing){
         $controller = new DevController();
         $view = $controller->allDev();
         break;
+        case '/movieland':
+        $controller = new MovieLandController();
+        $view = $controller->home();
+        break;
     default:
         $controller = new ErrorController;
         $view = $controller->pageNotFound();
 
 }
-
 $view->render();
+
+
+/**
+$routingMap = [
+    '/' => (new MainController())->home(),
+    '/about' => (new AboutController())->about(),
+    '/todolist' => (new DevController())->allDev(),
+    '/todolist/ajout' => (new DevController())->insertDev()
+];
+
+foreach ($routingMap as $routeValue => $className){
+    if ($routing === $routeValue){
+        $controller = new $className;
+        $controller->render();
+        break;
+    }
+}
+**/
+
 
 
 /**

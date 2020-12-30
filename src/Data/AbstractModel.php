@@ -70,6 +70,21 @@ abstract class AbstractModel
     }
 
     /**
+     *
+     * Trouve tout les enregistrements d'une database table
+     * @param string $tableName
+     * @param string $tableJoin
+     * @param string $tableJoinKey
+     * @param string $tableNameKey
+     * @return array
+     */
+    protected static function findAllInTableWithJoin(string $tableName, string $tableJoin, string $tableJoinKey, string $tableNameKey): array
+    {
+        $statement = DatabaseHandler::query("SELECT * FROM $tableName LEFT JOIN $tableJoin On $tableJoinKey = $tableNameKey");
+        return static::fetchAllFromStatement($statement);
+    }
+
+    /**
      * @param string $tableName
      * @param int $id
      * @return AbstractModel|null

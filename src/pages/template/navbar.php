@@ -21,6 +21,9 @@
                 <li class=" nav-item">
                     <a class="nav-link waves-effect waves-light" target="" href="todolist" title="Ce que je dois faire!"><i class="fas fa-clipboard-list"></i>Liste de Tâches</a>
                 </li>
+                <li class=" nav-item">
+                    <a class="nav-link waves-effect waves-light" target="" href="movieland" title="Ecf refactory!"><i class="fas fa-clipboard-list"></i>Movie Land</a>
+                </li>
 
             </ul>
         </div>

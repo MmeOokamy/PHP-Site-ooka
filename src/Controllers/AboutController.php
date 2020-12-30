@@ -12,6 +12,8 @@ class AboutController
 
     public function about(): AbstractView
     {
-        return new StandardView(['about',]);
+        return new StandardView(['about'], [
+            'title' => 'about me'
+        ]);
     }
 }

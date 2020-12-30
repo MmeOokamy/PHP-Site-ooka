@@ -8,7 +8,7 @@ final class DatabaseHandler
      * @static
      * @var \PDO
      */
-    private static \PDO $instance;
+    private static $instance;
 
 
     private function __construct(){}
@@ -20,12 +20,12 @@ final class DatabaseHandler
     private static function getInstance(): \PDO
     {
         $host = "localhost";
-        $user = "ookadnzb_ooka";
-        $mdp = "jesuisunechaussette";
-        $databaseName = "ookadnzb_ooka_land";
-        //$user = "root";
-        //$mdp = "";
-        //$databaseName = "ooka_land";
+        //$user = "ookadnzb_ooka";
+        //$mdp = "jesuisunechaussette";
+        //$databaseName = "ookadnzb_ooka_land";
+        $user = "root";
+        $mdp = "";
+        $databaseName = "ooka_land";
 
         if (is_null(DatabaseHandler::$instance)){
            $dbh = new \PDO(
