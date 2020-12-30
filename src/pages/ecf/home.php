@@ -1,9 +1,10 @@
 <section class="erebe team-section text-center dark-grey-text">
 
     <h1 class="font-weight-bold mb-4 pb-2">
-        Movien land Teste 1
+        <?= $title; ?>
     </h1>
-    <h1><?= $title; ?></h1>
+    <div class="row row-cols-1 row-cols-md-4">
+
     <?php foreach ($movies as $movie): ?>
         <div class="col mb-4">
             <div class="card">
@@ -16,4 +17,5 @@
             </div>
         </div>
     <?php endforeach; ?>
+    </div>
 </section>
