@@ -92,7 +92,7 @@ abstract class AbstractModel
      */
     protected static function findByIdInTable( string $tableName, int $id): ?AbstractModel
     {
-        $statement = DatabaseHandler::prepare("SELECT * FROM `$tableName` WHERE `id` = :id");
+        $statement = DatabaseHandler::prepare("SELECT * FROM $tableName WHERE `id` = :id");
         $statement->execute([':id' => $id]);
         return static::fetchOneOrNull($statement);
     }
@@ -106,7 +106,7 @@ abstract class AbstractModel
      */
     protected static function findWherePropEqualInTable(string $tableName, string $propName, string $value): array
     {
-        $statement = DatabaseHandler::prepare("SELECT * FROM `$tableName` WHERE `$propName` = :val");
+        $statement = DatabaseHandler::prepare("SELECT * FROM $tableName WHERE $propName = :val");
         $statement->execute([ ':val' => $value ]);
         return static::fetchAllFromStatement($statement);
     }
@@ -142,9 +142,9 @@ abstract class AbstractModel
         $valueNames = join(', ', $valueNames);
 
         $queryArray = [
-            "INSERT INTO `$tableName`",
-            '(' . $propertyNames . ')',
-            'VALUES (' . $valueNames . ')',
+            "INSERT INTO $tableName",
+            "(" . $propertyNames . ")",
+            "VALUES (" . $valueNames . ")",
             ];
 
         $query = join("\n", $queryArray);

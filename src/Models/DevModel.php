@@ -58,14 +58,24 @@ final class DevModel extends AbstractModel
         return parent::findWherePropEqualInTable('dev_step', $propName, $value);
     }
 
-    protected function insert(): void
+    public function create($dev_description)
     {
-        $this->insertInTable(
-            'dev_step',
-            [
-                'dev_description' => 'dev_description',
-            ]
-        );
+        try{
+            $request = DatabaseHandler::prepare("INSERT INTO `dev_step`(`dev_description`) VALUES (:dev_description)");
+            $request->execute(
+                [
+                    ':dev_description' => $dev_description,
+                ]
+            );
+            return true;
+
+
+        } catch (\PDOException $exception){
+            $alerte = var_dump('erreur lors de l\'execution de la requete sql :' . $exception->getMessage());
+            return false;
+        }
+
+         /****/
     }
 
     protected function update(): void
@@ -83,4 +93,13 @@ final class DevModel extends AbstractModel
     }
 
 
+    public function insert(): void
+    {
+        $this->insertInTable(
+            'dev_step',
+            [
+                'dev_description' => 'dev_description',
+            ]
+        );
+    }
 }

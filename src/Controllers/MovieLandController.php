@@ -19,5 +19,16 @@ public function home(): AbstractView
     ]);
 }
 
+public function createMovie(): AbstractView
+{
+    return new StandardView(['ecf/home'], [
+        'title' => 'Ma base de Données de Film!',
+        'movies' => MovieLandModel::findAll(),
+
+    ]);
+}
+
+
+
 
 }

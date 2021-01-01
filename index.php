@@ -26,9 +26,13 @@ switch ($routing){
         break;
     case '/todolist':
         $controller = new DevController();
-        $view = $controller->allDev();
+        $view = $controller->allDevView();
         break;
-        case '/movieland':
+    case '/todolist/ajout':
+        $controller = new DevController();
+        $view = $controller->insertDevView();
+        break;
+    case '/movieland':
         $controller = new MovieLandController();
         $view = $controller->home();
         break;

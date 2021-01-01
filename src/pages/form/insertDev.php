@@ -9,14 +9,16 @@
     </section>
     <section class="erebe team-section text-center dark-grey-text">
 
-        <?php if(isset($alerte)){
-            echo $alerte;
+        <?php var_dump($_POST); ?>
+
+        <?php if (isset($alerteMessage)) {
+            echo $alerteMessage;
         }
         ?>
-        <form action="?view=addList" method="post">
+        <form action="" method="post">
             <div class="form-group mt-5">
-                <label for="name">Tâche a accomplir</label>
-                <input class="input is-primary" name="name" id="name" type="text" placeholder="category"
+                <label for="dev_description">Tâche a accomplir</label>
+                <input class="input is-primary" name="dev_description" id="dev_description" type="text" placeholder="category"
                        required>
             </div>
             <div class="mt-5 ">
