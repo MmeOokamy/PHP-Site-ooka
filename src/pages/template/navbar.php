@@ -1,6 +1,6 @@
 <header>
       <nav class="mb-1 navbar navbar-expand-lg navbar-light peach-gradient">
-        <a class="navbar-brand massEffect" href="about">Ookamy</a>
+        <a class="navbar-brand massEffect" href="<?= $_SERVER['BASE_URI'] ?>/about">Ookamy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -13,16 +13,16 @@
                     <a class="nav-link waves-effect waves-light" target="_blank" href="https://github.com/MmeOokamy"><i class="fab fa-github"></i> github</a>
                 </li>
                 <li class=" nav-item">
-                    <a class="nav-link waves-effect waves-light" target="_blank" href="/ecf/"><i class="fab fa-php"></i> MoviesLand ECF DWWM</a>
+                    <a class="nav-link waves-effect waves-light" target="_blank" href="<?= $_SERVER['BASE_URI'] ?>/ecf/"><i class="fab fa-php"></i> MoviesLand ECF DWWM</a>
                 </li>
                 <li class=" nav-item">
                     <a class="nav-link waves-effect waves-light" target="_blank" href="https://mme.ooka.planethoster.world/" title="Attention c'est moche"><i class="fab fa-wordpress-simple"></i> WordTeste</a>
                 </li>
                 <li class=" nav-item">
-                    <a class="nav-link waves-effect waves-light" target="" href="todolist" title="Ce que je dois faire!"><i class="fas fa-clipboard-list"></i>Liste de Tâches</a>
+                    <a class="nav-link waves-effect waves-light" target="" href="<?= $_SERVER['BASE_URI'] ?>/todolist" title="Ce que je dois faire!"><i class="fas fa-clipboard-list"></i>Liste de Tâches</a>
                 </li>
                 <li class=" nav-item">
-                    <a class="nav-link waves-effect waves-light" target="" href="movieland" title="Ecf refactory!"><i class="fas fa-clipboard-list"></i>Movie Land</a>
+                    <a class="nav-link waves-effect waves-light" target="" href="<?= $_SERVER['BASE_URI'] ?>/movieland" title="Ecf refactory!"><i class="fas fa-clipboard-list"></i>Movie Land</a>
                 </li>
 
             </ul>
@@ -31,6 +31,5 @@
             <img src="./src/public/img/mr_cookie.gif" height="50px" width="50px" alt="Cookie qui danse, oeuvre de Yurelei">
         </div>
     </nav>
-
     </header>
 

@@ -3,7 +3,9 @@
     <h1 class="font-weight-bold mb-4 pb-2">
         <?= $title; ?>
     </h1>
+    <?php if (isset($alerte)) { echo $alerte;} ?>
     <div class="row row-cols-1 row-cols-md-4">
+
 
     <?php foreach ($movies as $movie): ?>
         <div class="col mb-4">
@@ -12,6 +14,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?= $movie->getMovieName(); ?></h5>
                     <h6 class="card-title"><?= $movie->getMovieDate(); ?></h6>
+                    <h6 class="card-title"><?= $movie->getIdCategory(); ?></h6>
                     <a href="?page=movie&id=<?= $movie->getId(); ?>">plus de detail</a>
                 </div>
             </div>

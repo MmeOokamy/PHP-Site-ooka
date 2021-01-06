@@ -30,7 +30,7 @@ class DevController
                 $alerteMessage = '<div class="alert alert-success mt-5">
             Votre étape de développement a été sauvegardé !</div>';
             } else {
-                $alerte = '<div class="alert alert-warning mt-5">
+                $alerteMessage = '<div class="alert alert-warning mt-5">
             Votre étape de développement n\'a pas été sauvegardé !</div>';
             }
         }

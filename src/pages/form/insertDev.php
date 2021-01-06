@@ -9,8 +9,6 @@
     </section>
     <section class="erebe team-section text-center dark-grey-text">
 
-        <?php var_dump($_POST); ?>
-
         <?php if (isset($alerteMessage)) {
             echo $alerteMessage;
         }
